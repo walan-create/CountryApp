@@ -1,0 +1,18 @@
+<section>
+
+  <input
+    type="text"
+    class="input input-bordered mr-2 w-56"
+    [placeholder]="placeholder()"
+    (keyup.enter)="onSearch(txtSearch.value)"
+    #txtSearch
+  />
+  <!-- (keyup.enter)="entrada.emit(txtSearch.value)" También funciona, es más rápido -->
+
+  <button (click)="onSearch(txtSearch.value)" class="btn btn-primary">
+    Buscar
+  </button>
+  <!-- (click)="entrada.emit(txtSearch.value)" class="btn btn-primary"  -->
+
+
+</section>
