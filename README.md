@@ -1,3 +1,3 @@
 # CountryApp
 
-Esta es una aplicación creada con 
+Esta es una aplicación creada con DaisyUI
