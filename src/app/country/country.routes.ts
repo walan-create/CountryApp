@@ -13,16 +13,16 @@ export const countryRoutes: Routes = [
     component: CountryLayoutComponent, // Importacion tradicional
     children: [
       {
-        path: 'by-capital',
-        component: ByCapitalPageComponent,
+        path: 'by-region',
+        component: ByRegionPageComponent,
       },
       {
         path: 'by-country',
         component: ByCountryPageComponent,
       },
       {
-        path: 'by-region',
-        component: ByRegionPageComponent,
+        path: 'by-capital',
+        component: ByCapitalPageComponent,
       },
       {
         path: 'by/:code',
@@ -30,7 +30,7 @@ export const countryRoutes: Routes = [
       },
       {
         path: '**',
-        redirectTo: 'by-capital',
+        redirectTo: 'by-region',
       },
     ],
   },
